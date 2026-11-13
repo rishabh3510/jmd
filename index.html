@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JMD MAHA MEWA GROUP'S PVT. LTD. | Govt. Contractor | Gurugram</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        navy: { DEFAULT: '#0a1f44', 800: '#0e2a5c', 700: '#123a7a', 600: '#1a4a96' },
+        gold: { DEFAULT: '#d4a017', 500: '#e0b52a', 400: '#e8c34a', 300: '#f0d878' }
+      },
+      fontFamily: {
+        sans: ['Inter', 'Segoe UI', 'Arial', 'sans-serif']
+      }
+    }
+  }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; }
+  .hero-bg {
+    background-image: linear-gradient(rgba(10,31,68,.82), rgba(10,31,68,.65)), url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover; background-position: center;
+  }
+  .card-img { transition: transform .5s ease; }
+  .service-card:hover .card-img { transform: scale(1.08); }
+  .service-card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(10,31,68,.15); }
+  .service-card { transition: all .35s ease; }
+  .nav-link { position: relative; }
+  .nav-link::after {
+    content:''; position:absolute; left:0; bottom:-4px; height:2px; width:0;
+    background:#d4a017; transition:width .3s ease;
+  }
+  .nav-link:hover::after, .nav-link.active::after { width:100%; }
+  .nav-link.active { color:#d4a017; }
+  .fade-in { opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease; }
+  .fade-in.visible { opacity:1; transform:translateY(0); }
+  .gold-underline { position:relative; }
+  .gold-underline::after {
+    content:''; position:absolute; left:50%; transform:translateX(-50%); bottom:-10px;
+    width:60px; height:4px; background:#d4a017; border-radius:2px;
+  }
+  .project-card { transition: all .4s ease; }
+  .project-card:hover { transform: translateY(-8px); box-shadow: 0 25px 50px rgba(10,31,68,.2); }
+  .project-card:hover .project-overlay { opacity:1; }
+  .project-overlay { opacity:0; transition:opacity .4s ease; }
+</style>
+</head>
+<body class="bg-gray-50 text-gray-700 antialiased">
+
+<!-- ===== TOP CONTACT BAR ===== -->
+<div class="bg-navy-800 text-gray-300 text-xs sm:text-sm">
+  <div class="max-w-7xl mx-auto px-4 py-2 flex flex-col sm:flex-row items-center justify-between gap-2">
+    <div class="flex flex-wrap items-center gap-x-5 gap-y-1">
+      <a href="mailto:jmdmahamewagrouppvtltd@gmail.com" class="flex items-center gap-1.5 hover:text-gold transition">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        jmdmahamewagrouppvtltd@gmail.com
+      </a>
+      <span class="hidden md:inline text-gray-600">|</span>
+      <a href="https://www.google.com/maps/search/?api=1&query=SCO-204,+Satyam+Plaza,+Civil+Lines,+Sector-15,+Gurugram-122001" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 hover:text-gold transition cursor-pointer">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        SCO-204, Satyam Plaza, Civil Lines, Sector-15, Gurugram-122001
+      </a>
+    </div>
+    <div class="flex items-center gap-5">
+      <a href="tel:+919540365609" class="flex items-center gap-1.5 hover:text-gold transition font-medium">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+        +91 9540365609
+      </a>
+      <a href="tel:01244192432" class="hidden sm:flex items-center gap-1.5 hover:text-gold transition font-medium">
+        0124-4192432
+      </a>
+      <span class="hidden lg:inline text-gold font-semibold">GSTIN: 06AAHCJ2677E1ZJ</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===== STICKY HEADER ===== -->
+<header id="header" class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-md transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+    <a href="#home" class="flex items-center gap-3">
+      <img src="logo.jpeg" alt="JMD Maha Mewa Group Logo" class="h-14 w-auto object-contain">
+      <div class="leading-tight">
+        <div class="text-navy font-extrabold text-sm sm:text-base tracking-wide">JMD MAHA MEWA</div>
+        <div class="text-gold font-bold text-xs sm:text-sm tracking-widest">GROUP'S PVT. LTD.</div>
+      </div>
+    </a>
+    <nav class="hidden lg:flex items-center gap-8 font-semibold text-sm text-navy">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About Us</a>
+      <a href="#services" class="nav-link">Our Services</a>
+      <a href="#projects" class="nav-link">Our Projects</a>
+      <a href="#contact" class="nav-link">Contact Us</a>
+      <a href="#contact" class="bg-gold hover:bg-gold-500 text-navy font-bold px-5 py-2.5 rounded-sm transition shadow">Get a Quote</a>
+    </nav>
+    <button id="menuBtn" class="lg:hidden text-navy p-2" aria-label="Menu">
+      <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="hidden lg:hidden bg-white border-t border-gray-100">
+    <nav class="flex flex-col px-4 py-3 font-semibold text-navy">
+      <a href="#home" class="py-3 border-b border-gray-100">Home</a>
+      <a href="#about" class="py-3 border-b border-gray-100">About Us</a>
+      <a href="#services" class="py-3 border-b border-gray-100">Our Services</a>
+      <a href="#projects" class="py-3 border-b border-gray-100">Our Projects</a>
+      <a href="#contact" class="py-3">Contact Us</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section id="home" class="hero-bg text-white">
+  <div class="max-w-7xl mx-auto px-4 py-24 sm:py-32 lg:py-40">
+    <div class="max-w-3xl fade-in visible">
+      <div class="inline-flex items-center gap-2 bg-gold/20 border border-gold/50 text-gold-300 text-xs sm:text-sm font-bold tracking-widest uppercase px-4 py-2 rounded-full mb-6">
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+        Govt. Contractor — Trusted Since 2019
+      </div>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">
+        JMD MAHA MEWA<br>GROUP'S PVT. LTD.
+      </h1>
+      <p class="text-gold-400 text-xl sm:text-2xl font-bold tracking-wide mb-2">GOVT. CONTRACTOR</p>
+      <p class="text-gray-200 text-lg sm:text-xl font-light mb-8">Building Tomorrow, Together</p>
+      <p class="text-gray-300 max-w-xl mb-10 leading-relaxed">
+        Delivering quality civil, structural, electrical, plumbing and HVAC contracting services for government and private projects across India — with precision, compliance and on-time execution.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#services" class="bg-gold hover:bg-gold-500 text-navy font-bold px-8 py-4 rounded-sm transition shadow-lg shadow-gold/20">Explore Our Services</a>
+        <a href="#contact" class="border-2 border-white/70 hover:bg-white/10 text-white font-bold px-8 py-4 rounded-sm transition">Contact Us</a>
+      </div>
+    </div>
+  </div>
+  <!-- Stats strip -->
+  <div class="bg-navy-800/60 backdrop-blur border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 py-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div><div class="text-3xl font-extrabold text-gold">2019</div><div class="text-gray-300 text-sm mt-1">Year Established</div></div>
+      <div><div class="text-3xl font-extrabold text-gold">100%</div><div class="text-gray-300 text-sm mt-1">Govt. Compliant</div></div>
+      <div><div class="text-3xl font-extrabold text-gold">8+</div><div class="text-gray-300 text-sm mt-1">Service Disciplines</div></div>
+      <div><div class="text-3xl font-extrabold text-gold">2026</div><div class="text-gray-300 text-sm mt-1">Pvt. Ltd. Entity</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT US ===== -->
+<section id="about" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="grid lg:grid-cols-2 gap-14 items-center">
+      <div class="fade-in">
+        <p class="text-gold font-bold tracking-widest uppercase text-sm mb-2">About Us</p>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-navy gold-underline inline-block pb-4 mb-6">Building Trust,<br>Delivering Excellence</h2>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          JMD Maha Mewa Group's Pvt. Ltd. is a professional construction and government contracting company based in Gurugram, Haryana. Established in 2019, the company has grown into a trusted government contractor and officially expanded into a Private Limited entity in 2026, under the able leadership of its directors, Mr. Manish Shukla and Mrs. Aarti Shukla.
+        </p>
+        <p class="text-gray-600 leading-relaxed mb-6">
+          We specialize in end-to-end civil, structural, electrical, plumbing, mechanical and HVAC contracting — from site development and foundation work to finishing, testing and final handover. Our team of engineers and skilled professionals ensures every project meets the highest standards of quality, safety and regulatory compliance.
+        </p>
+        <ul class="grid sm:grid-cols-2 gap-3 mb-8">
+          <li class="flex items-center gap-2 text-gray-700"><span class="w-2 h-2 bg-gold rounded-full"></span>Govt. & Private Contracts</li>
+          <li class="flex items-center gap-2 text-gray-700"><span class="w-2 h-2 bg-gold rounded-full"></span>End-to-End Execution</li>
+          <li class="flex items-center gap-2 text-gray-700"><span class="w-2 h-2 bg-gold rounded-full"></span>Quality Assured Work</li>
+          <li class="flex items-center gap-2 text-gray-700"><span class="w-2 h-2 bg-gold rounded-full"></span>On Time Completion</li>
+        </ul>
+        <a href="#contact" class="inline-flex items-center gap-2 bg-navy hover:bg-navy-700 text-white font-bold px-7 py-3.5 rounded-sm transition">
+          Work With Us
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+      </div>
+      <div class="fade-in relative">
+        <div class="rounded-sm overflow-hidden shadow-2xl">
+          <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1200&q=80" alt="Construction site" class="w-full h-[420px] object-cover">
+        </div>
+        <div class="absolute -bottom-6 -left-6 bg-gold text-navy font-extrabold px-8 py-5 rounded-sm shadow-xl hidden sm:block">
+          <div class="text-3xl">EST.</div>
+          <div class="text-sm tracking-widest">2019 • GURUGRAM</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Leadership -->
+    <div class="mt-20 fade-in">
+      <div class="text-center mb-10">
+        <p class="text-gold font-bold tracking-widest uppercase text-sm mb-2">Our Team</p>
+        <h3 class="text-2xl sm:text-3xl font-extrabold text-navy gold-underline inline-block pb-3">Our Leadership</h3>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+        <div class="bg-white border border-gray-200 rounded-sm p-8 text-center shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+          <img src="./Mr. Manish Shukla.jpeg" alt="Mr. Manish Shukla" class="w-48 h-48 object-cover object-top rounded-full mx-auto mb-5 border-4 border-gold/30">
+          <h4 class="text-lg font-extrabold text-navy">Mr. Manish Shukla</h4>
+          <p class="text-gold font-semibold text-sm mt-1">Director, JMD Maha Mewa Group's Pvt. Ltd.</p>
+          <div class="w-10 h-0.5 bg-gold mx-auto mt-4"></div>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-sm p-8 text-center shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+          <img src="./Mrs. Aarti Shukla.jpeg" alt="Mrs. Aarti Shukla" class="w-48 h-48 object-cover object-top rounded-full mx-auto mb-5 border-4 border-gold/30">
+          <h4 class="text-lg font-extrabold text-navy">Mrs. Aarti Shukla</h4>
+          <p class="text-gold font-semibold text-sm mt-1">Director, JMD Maha Mewa Group's Pvt. Ltd.</p>
+          <div class="w-10 h-0.5 bg-gold mx-auto mt-4"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== OUR SERVICES ===== -->
+<section id="services" class="py-20 bg-gray-100">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="text-center mb-14 fade-in">
+      <p class="text-gold font-bold tracking-widest uppercase text-sm mb-2">What We Do</p>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-navy gold-underline inline-block pb-4">Our Services</h2>
+      <p class="text-gray-500 mt-6 max-w-2xl mx-auto">Comprehensive contracting services covering every stage of construction — from ground-breaking to final handover.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-5">
+
+      <!-- Service 1 -->
+      <div class="service-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-40 overflow-hidden"><img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=80" alt="Project Planning" class="card-img w-full h-full object-cover"></div>
+        <div class="p-4">
+          <h3 class="font-bold text-navy mb-1.5 text-sm leading-snug">Project Planning, Design & Execution</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">Comprehensive end-to-end project management, structural design, and seamless execution.</p>
+        </div>
+      </div>
+      <!-- Service 2 -->
+      <div class="service-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-40 overflow-hidden"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80" alt="Government Infrastructure" class="card-img w-full h-full object-cover"></div>
+        <div class="p-4">
+          <h3 class="font-bold text-navy mb-1.5 text-sm leading-snug">Government Infrastructure & Development Projects</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">Executing high-scale public infrastructure, civic developments, and state tenders.</p>
+        </div>
+      </div>
+      <!-- Service 3 -->
+      <div class="service-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-40 overflow-hidden"><img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=600&q=80" alt="Turnkey Projects" class="card-img w-full h-full object-cover"></div>
+        <div class="p-4">
+          <h3 class="font-bold text-navy mb-1.5 text-sm leading-snug">Turnkey Project Execution & Management</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">Delivering complete projects from conceptualization to final handover.</p>
+        </div>
+      </div>
+      <!-- Service 4 -->
+      <div class="service-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-40 overflow-hidden"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80" alt="Civil Construction" class="card-img w-full h-full object-cover"></div>
+        <div class="p-4">
+          <h3 class="font-bold text-navy mb-1.5 text-sm leading-snug">Civil Construction & Infrastructure Development</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">Earthworks, site development, and foundational civil infrastructure.</p>
+        </div>
+      </div>
+      <!-- Service 5 -->
+      <div class="service-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-40 overflow-hidden"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="Building Construction" class="card-img w-full h-full object-cover"></div>
+        <div class="p-4">
+          <h3 class="font-bold text-navy mb-1.5 text-sm leading-snug">Building Construction & Renovation</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">Residential, commercial, and industrial building construction, including renovations.</p>
+        </div>
+      </div>
+      <!-- Service 6 -->
+      <div class="service-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-40 overflow-hidden"><img src="./Road Construction & Highway Development.avif" alt="Road Construction" class="card-img w-full h-full object-cover"></div>
+        <div class="p-4">
+          <h3 class="font-bold text-navy mb-1.5 text-sm leading-snug">Road Construction & Highway Development</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">Asphalt and concrete road paving, highway expansion, and maintenance.</p>
+        </div>
+      </div>
+      <!-- Service 7 -->
+      <div class="service-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-40 overflow-hidden"><img src="./Bridge Construction & Infrastructure Works.jpeg" alt="Bridge Construction" class="card-img w-full h-full object-cover"></div>
+        <div class="p-4">
+          <h3 class="font-bold text-navy mb-1.5 text-sm leading-snug">Bridge Construction & Infrastructure Works</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">Structural engineering and construction of bridges and overpasses.</p>
+        </div>
+      </div>
+      <!-- Service 8 -->
+      <div class="service-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-40 overflow-hidden"><img src="./Structural Engineering & Fabrication Works.jpg" alt="Structural Engineering" class="card-img w-full h-full object-cover"></div>
+        <div class="p-4">
+          <h3 class="font-bold text-navy mb-1.5 text-sm leading-snug">Structural Engineering & Fabrication Works</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">Heavy steel fabrication, RCC structures, and customized industrial frameworks.</p>
+        </div>
+      </div>
+      <!-- Service 9 -->
+      <div class="service-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-40 overflow-hidden"><img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80" alt="Industrial Civil Works" class="card-img w-full h-full object-cover"></div>
+        <div class="p-4">
+          <h3 class="font-bold text-navy mb-1.5 text-sm leading-snug">Industrial Civil & Mechanical Works</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">Specialized construction and mechanical setups for factories and industrial plants.</p>
+        </div>
+      </div>
+      <!-- Service 10 -->
+      <div class="service-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-40 overflow-hidden"><img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=600&q=80" alt="Mechanical Engineering" class="card-img w-full h-full object-cover"></div>
+        <div class="p-4">
+          <h3 class="font-bold text-navy mb-1.5 text-sm leading-snug">Mechanical Engineering & Industrial Projects</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">Heavy machinery installation, HVAC, and industrial mechanical systems.</p>
+        </div>
+      </div>
+      <!-- Service 11 -->
+      <div class="service-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-40 overflow-hidden"><img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80" alt="Electrical Installation" class="card-img w-full h-full object-cover"></div>
+        <div class="p-4">
+          <h3 class="font-bold text-navy mb-1.5 text-sm leading-snug">Electrical & Mechanical Installation Works</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">Complete electrical conduit wiring, DB installation, and mechanical setups.</p>
+        </div>
+      </div>
+      <!-- Service 12 -->
+      <div class="service-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-40 overflow-hidden"><img src="./Water Supply & Pipeline Works.jpg" alt="Water Supply" class="card-img w-full h-full object-cover"></div>
+        <div class="p-4">
+          <h3 class="font-bold text-navy mb-1.5 text-sm leading-snug">Water Supply & Pipeline Works</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">Underground water supply networks, pumping stations, and distribution lines.</p>
+        </div>
+      </div>
+      <!-- Service 13 -->
+      <div class="service-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-40 overflow-hidden"><img src="./Plumbing & Sanitary Works.avif" alt="Plumbing Works" class="card-img w-full h-full object-cover"></div>
+        <div class="p-4">
+          <h3 class="font-bold text-navy mb-1.5 text-sm leading-snug">Plumbing & Sanitary Works</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">CP fittings, internal drainage lines, sanitary fixtures, and commercial plumbing.</p>
+        </div>
+      </div>
+      <!-- Service 14 -->
+      <div class="service-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-40 overflow-hidden"><img src="./Drainage & Sewerage Systems.webp" alt="Drainage Systems" class="card-img w-full h-full object-cover"></div>
+        <div class="p-4">
+          <h3 class="font-bold text-navy mb-1.5 text-sm leading-snug">Drainage & Sewerage Systems</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">Large-scale sewer line installations, manholes, and stormwater drainage systems.</p>
+        </div>
+      </div>
+      <!-- Service 15 -->
+      <div class="service-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-40 overflow-hidden"><img src="./Boundary Wall & Compound Development Works.jpeg" alt="Boundary Wall" class="card-img w-full h-full object-cover"></div>
+        <div class="p-4">
+          <h3 class="font-bold text-navy mb-1.5 text-sm leading-snug">Boundary Wall & Compound Development Works</h3>
+          <p class="text-xs text-gray-500 leading-relaxed">Security walls, fencing, and complete compound landscaping and development.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== OUR PROJECTS ===== -->
+<section id="projects" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="text-center mb-14 fade-in">
+      <p class="text-gold font-bold tracking-widest uppercase text-sm mb-2">Our Work</p>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-navy gold-underline inline-block pb-4">Our Projects</h2>
+      <p class="text-gray-500 mt-6 max-w-2xl mx-auto">A showcase of our completed and ongoing government and private contracting projects.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Project 1 -->
+      <div class="project-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-44 overflow-hidden"><img src="./Construction of Boundary Wall of Community Center at Village Akera (VAGY).jpeg" alt="Boundary Wall Community Center" class="w-full h-full object-cover"></div>
+        <div class="p-5">
+          <h3 class="font-bold text-navy leading-snug">Construction of Boundary Wall of Community Center at Village Akera (VAGY)</h3>
+          <p class="text-sm text-gold font-semibold mt-1">Panchayati Raj, Rewari</p>
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-xs font-semibold text-gray-500">Allotment: 18/02/2026</span>
+            <span class="text-xs font-bold bg-green-100 text-green-700 px-2.5 py-1 rounded-full">Closed</span>
+          </div>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="project-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-44 overflow-hidden"><img src="./Construction of General Chaupal - Mohhamadpur (VANGY).jpeg" alt="General Chaupal" class="w-full h-full object-cover"></div>
+        <div class="p-5">
+          <h3 class="font-bold text-navy leading-snug">Construction of General Chaupal - Mohhamadpur (VANGY)</h3>
+          <p class="text-sm text-gold font-semibold mt-1">XEN PR Gurgaon</p>
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-xs font-semibold text-gray-500">Allotment: 22/10/2024</span>
+            <span class="text-xs font-bold bg-green-100 text-green-700 px-2.5 py-1 rounded-full">Closed</span>
+          </div>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="project-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-44 overflow-hidden"><img src="./Construction of Community Centre 0.6 Acre (Bhokarka).jpeg" alt="Community Center Bhokarka" class="w-full h-full object-cover"></div>
+        <div class="p-5">
+          <h3 class="font-bold text-navy leading-snug">Construction of Community Centre 0.6 Acre (Bhokarka)</h3>
+          <p class="text-sm text-gold font-semibold mt-1">XEN PR Gurgaon</p>
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-xs font-semibold text-gray-500">Allotment: 31/01/2025</span>
+            <span class="text-xs font-bold bg-green-100 text-green-700 px-2.5 py-1 rounded-full">Closed</span>
+          </div>
+        </div>
+      </div>
+      <!-- Project 4 -->
+      <div class="project-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-44 overflow-hidden"><img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=800&q=80" alt="Community Center Palasoli" class="w-full h-full object-cover"></div>
+        <div class="p-5">
+          <h3 class="font-bold text-navy leading-snug">Construction of Community Centre 0.6 Acre (Palasoli)</h3>
+          <p class="text-sm text-gold font-semibold mt-1">XEN PR Gurgaon</p>
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-xs font-semibold text-gray-500">Allotment: 31/01/2025</span>
+            <span class="text-xs font-bold bg-green-100 text-green-700 px-2.5 py-1 rounded-full">Closed</span>
+          </div>
+        </div>
+      </div>
+      <!-- Project 5 -->
+      <div class="project-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-44 overflow-hidden"><img src="./Construction of Bramda in Ambedkar Bhawan (Bhoda Kalan).jpg" alt="Bramda Ambedkar Bhawan" class="w-full h-full object-cover"></div>
+        <div class="p-5">
+          <h3 class="font-bold text-navy leading-snug">Construction of Bramda in Ambedkar Bhawan (Bhoda Kalan)</h3>
+          <p class="text-sm text-gold font-semibold mt-1">XEN PR Gurgaon</p>
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-xs font-semibold text-gray-500">Allotment: 20/12/2024</span>
+            <span class="text-xs font-bold bg-green-100 text-green-700 px-2.5 py-1 rounded-full">Closed</span>
+          </div>
+        </div>
+      </div>
+      <!-- Project 6 -->
+      <div class="project-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-44 overflow-hidden"><img src="./Construction of Hall in Mela Ground at Village Bhokarka.jpeg" alt="Hall Mela Ground" class="w-full h-full object-cover"></div>
+        <div class="p-5">
+          <h3 class="font-bold text-navy leading-snug">Construction of Hall in Mela Ground at Village Bhokarka</h3>
+          <p class="text-sm text-gold font-semibold mt-1">XEN PR Gurgaon</p>
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-xs font-semibold text-gray-500">Allotment: 23/12/2025</span>
+            <span class="text-xs font-bold bg-green-100 text-green-700 px-2.5 py-1 rounded-full">Closed</span>
+          </div>
+        </div>
+      </div>
+      <!-- Project 7 -->
+      <div class="project-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-44 overflow-hidden"><img src="./Construction of RCC Shed in S Ghat (SC) and Paving of Street (VANGY) 2025 Tatar Pur.jpg" alt="RCC Shed Tatar Pur" class="w-full h-full object-cover"></div>
+        <div class="p-5">
+          <h3 class="font-bold text-navy leading-snug">Construction of RCC Shed in S/ Ghat (SC) and Paving of Street (VANGY) 2025 Tatar Pur</h3>
+          <p class="text-sm text-gold font-semibold mt-1">XEN PR Gurgaon</p>
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-xs font-semibold text-gray-500">Allotment: 19/02/2026</span>
+            <span class="text-xs font-bold bg-green-100 text-green-700 px-2.5 py-1 rounded-full">Closed</span>
+          </div>
+        </div>
+      </div>
+      <!-- Project 8 -->
+      <div class="project-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="p-6">
+          <h3 class="font-bold text-navy leading-snug">Special Repair of Internal Roads, Lighting, INLET Channel, GI Wire Fencing at WTP Kalaka</h3>
+          <p class="text-sm text-gold font-semibold mt-1">Haryana Shehri Vikas Pradhikaran, Rewari</p>
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-xs font-semibold text-gray-500">Bid Date: 24/08/2026</span>
+            <span class="text-xs font-bold bg-blue-100 text-blue-700 px-2.5 py-1 rounded-full">Bid Submitted</span>
+          </div>
+        </div>
+      </div>
+      <!-- Project 9 -->
+      <div class="project-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-44 overflow-hidden"><img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80" alt="Oswal Steel Project" class="w-full h-full object-cover"></div>
+        <div class="p-5">
+          <h3 class="font-bold text-navy leading-snug">Oswal Steel Project Works</h3>
+          <p class="text-sm text-gold font-semibold mt-1">HVPNL, Faridabad</p>
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-xs font-semibold text-gray-500">Allotment: 22/04/2024</span>
+            <span class="text-xs font-bold bg-green-100 text-green-700 px-2.5 py-1 rounded-full">Closed</span>
+          </div>
+        </div>
+      </div>
+      <!-- Project 10 -->
+      <div class="project-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-44 overflow-hidden"><img src="./Creation of 1 No. 33KV Outgoing Bay & 33 KV Bus Bar Extension at 220 KV Substation Rangala Rajpur.jpeg" alt="33KV Bay Rangala" class="w-full h-full object-cover"></div>
+        <div class="p-5">
+          <h3 class="font-bold text-navy leading-snug">Creation of 1 No. 33KV Outgoing Bay & 33 KV Bus Bar Extension at 220 KV Substation Rangala Rajpur</h3>
+          <p class="text-sm text-gold font-semibold mt-1">HVPNL, Faridabad</p>
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-xs font-semibold text-gray-500">Allotment: 23/12/2025</span>
+            <span class="text-xs font-bold bg-green-100 text-green-700 px-2.5 py-1 rounded-full">Closed</span>
+          </div>
+        </div>
+      </div>
+      <!-- Project 11 -->
+      <div class="project-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-44 overflow-hidden"><img src="./PCC with Gravelling for 2 No 66KV Outgoing Line Bays at 220KV Substation Sec-46.jpeg" alt="66KV Bays Sec-46" class="w-full h-full object-cover"></div>
+        <div class="p-5">
+          <h3 class="font-bold text-navy leading-snug">PCC with Gravelling for 2 No 66KV Outgoing Line Bays at 220KV Substation Sec-46</h3>
+          <p class="text-sm text-gold font-semibold mt-1">HVPNL, Faridabad</p>
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-xs font-semibold text-gray-500">Allotment: 02/01/2026</span>
+            <span class="text-xs font-bold bg-green-100 text-green-700 px-2.5 py-1 rounded-full">Closed</span>
+          </div>
+        </div>
+      </div>
+      <!-- Project 12 -->
+      <div class="project-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-44 overflow-hidden"><img src="./Creation of 02 Nos. 66 KV Bays at 400 KV Nawada Substation.jpeg" alt="66KV Bays Nawada" class="w-full h-full object-cover"></div>
+        <div class="p-5">
+          <h3 class="font-bold text-navy leading-snug">Creation of 02 Nos. 66 KV Bays at 400 KV Nawada Substation</h3>
+          <p class="text-sm text-gold font-semibold mt-1">HVPNL, Faridabad</p>
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-xs font-semibold text-gray-500">Allotment: 23/12/2025</span>
+            <span class="text-xs font-bold bg-green-100 text-green-700 px-2.5 py-1 rounded-full">Closed</span>
+          </div>
+        </div>
+      </div>
+      <!-- Project 13 -->
+      <div class="project-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-44 overflow-hidden"><img src="./Maintenance of Boundary Wall at 66KV Substation A-2.jpeg" alt="Boundary Wall 66KV" class="w-full h-full object-cover"></div>
+        <div class="p-5">
+          <h3 class="font-bold text-navy leading-snug">Maintenance of Boundary Wall at 66KV Substation A-2</h3>
+          <p class="text-sm text-gold font-semibold mt-1">HVPNL, Faridabad</p>
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-xs font-semibold text-gray-500">Allotment: 20/04/2026</span>
+            <span class="text-xs font-bold bg-green-100 text-green-700 px-2.5 py-1 rounded-full">Closed</span>
+          </div>
+        </div>
+      </div>
+      <!-- Project 14 -->
+      <div class="project-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-44 overflow-hidden"><img src="./Extension of Control Room Building at 220 KV GIS Substation Sector-58.jpeg" alt="Control Room Sec-58" class="w-full h-full object-cover"></div>
+        <div class="p-5">
+          <h3 class="font-bold text-navy leading-snug">Extension of Control Room Building at 220 KV GIS Substation Sector-58</h3>
+          <p class="text-sm text-gold font-semibold mt-1">HVPNL, Faridabad</p>
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-xs font-semibold text-gray-500">Allotment: 19/10/2026</span>
+            <span class="text-xs font-bold bg-yellow-100 text-yellow-700 px-2.5 py-1 rounded-full">In-Progress</span>
+          </div>
+        </div>
+      </div>
+      <!-- Project 15 -->
+      <div class="project-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-44 overflow-hidden"><img src="./Strengthening of 100 MVA Transformer Plinth to 160 MVA Transformer Plinth at 220 KV Substation Sector-20 (2).jpeg" alt="Transformer Plinth" class="w-full h-full object-cover"></div>
+        <div class="p-5">
+          <h3 class="font-bold text-navy leading-snug">Strengthening of 100 MVA Transformer Plinth to 160 MVA Transformer Plinth at 220 KV Substation Sector-20</h3>
+          <p class="text-sm text-gold font-semibold mt-1">HVPNL, Gurugram</p>
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-xs font-semibold text-gray-500">Allotment: 13/03/2024</span>
+            <span class="text-xs font-bold bg-green-100 text-green-700 px-2.5 py-1 rounded-full">Closed</span>
+          </div>
+        </div>
+      </div>
+      <!-- Project 16 -->
+      <div class="project-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-44 overflow-hidden"><img src="./Extension of Control Room Building, Cement Concrete & Un-Climbable Fencing at 66KV Substation Farrukhnagar.jpeg" alt="Farrukhnagar Substation" class="w-full h-full object-cover"></div>
+        <div class="p-5">
+          <h3 class="font-bold text-navy leading-snug">Extension of Control Room Building, Cement Concrete & Un-Climbable Fencing at 66KV Substation Farrukhnagar</h3>
+          <p class="text-sm text-gold font-semibold mt-1">HVPNL, Gurugram</p>
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-xs font-semibold text-gray-500">Allotment: 01/08/2025</span>
+            <span class="text-xs font-bold bg-green-100 text-green-700 px-2.5 py-1 rounded-full">Closed</span>
+          </div>
+        </div>
+      </div>
+      <!-- Project 17 -->
+      <div class="project-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-44 overflow-hidden"><img src="./RCC Beam Arrangement in IDCT for 33 KV GIS Panels at 220 KV Substation Sector 107.jpeg" alt="RCC Beam IDCT" class="w-full h-full object-cover"></div>
+        <div class="p-5">
+          <h3 class="font-bold text-navy leading-snug">RCC Beam Arrangement in IDCT for 33 KV GIS Panels at 220 KV Substation Sector 107</h3>
+          <p class="text-sm text-gold font-semibold mt-1">HVPNL, Gurugram</p>
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-xs font-semibold text-gray-500">Allotment: 09/02/2026</span>
+            <span class="text-xs font-bold bg-green-100 text-green-700 px-2.5 py-1 rounded-full">Closed</span>
+          </div>
+        </div>
+      </div>
+      <!-- Project 18 -->
+      <div class="project-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-44 overflow-hidden"><img src="./Augmentation of 66 KV Substation Dharuhera with Extension of Control Room Building.jpg" alt="Dharuhera Substation" class="w-full h-full object-cover"></div>
+        <div class="p-5">
+          <h3 class="font-bold text-navy leading-snug">Augmentation of 66 KV Substation Dharuhera with Extension of Control Room Building</h3>
+          <p class="text-sm text-gold font-semibold mt-1">HVPNL, Rewari</p>
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-xs font-semibold text-gray-500">Allotment: 27/03/2024</span>
+            <span class="text-xs font-bold bg-green-100 text-green-700 px-2.5 py-1 rounded-full">Closed</span>
+          </div>
+        </div>
+      </div>
+      <!-- Project 19 -->
+      <div class="project-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-44 overflow-hidden"><img src="./Augmentation of 132 KV Substation Kosli with Extension of Control Room Building.jpg" alt="Kosli Substation" class="w-full h-full object-cover"></div>
+        <div class="p-5">
+          <h3 class="font-bold text-navy leading-snug">Augmentation of 132 KV Substation Kosli with Extension of Control Room Building</h3>
+          <p class="text-sm text-gold font-semibold mt-1">HVPNL, Rewari</p>
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-xs font-semibold text-gray-500">Allotment: 20/12/2024</span>
+            <span class="text-xs font-bold bg-green-100 text-green-700 px-2.5 py-1 rounded-full">Closed</span>
+          </div>
+        </div>
+      </div>
+      <!-- Project 20 -->
+      <div class="project-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-44 overflow-hidden"><img src="./Special Estimate for Construction of Boundary Wall at 132KV Sub Station Kanina.jpeg" alt="Kanina Substation Wall" class="w-full h-full object-cover"></div>
+        <div class="p-5">
+          <h3 class="font-bold text-navy leading-snug">Special Estimate for Construction of Boundary Wall at 132KV Sub Station Kanina</h3>
+          <p class="text-sm text-gold font-semibold mt-1">HVPNL, Rewari</p>
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-xs font-semibold text-gray-500">Allotment: 28/01/2025</span>
+            <span class="text-xs font-bold bg-green-100 text-green-700 px-2.5 py-1 rounded-full">Closed</span>
+          </div>
+        </div>
+      </div>
+      <!-- Project 21 -->
+      <div class="project-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-44 overflow-hidden"><img src="./Augmentation of 220 KV Substation Mau by Providing Additional 1x100 MVA Transformer.avif" alt="Mau Substation" class="w-full h-full object-cover"></div>
+        <div class="p-5">
+          <h3 class="font-bold text-navy leading-snug">Augmentation of 220 KV Substation Mau by Providing Additional 1x100 MVA Transformer</h3>
+          <p class="text-sm text-gold font-semibold mt-1">HVPNL, Rewari</p>
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-xs font-semibold text-gray-500">Allotment: 09/12/2024</span>
+            <span class="text-xs font-bold bg-green-100 text-green-700 px-2.5 py-1 rounded-full">Closed</span>
+          </div>
+        </div>
+      </div>
+      <!-- Project 22 -->
+      <div class="project-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-44 overflow-hidden"><img src="./Renovation of Rest House at 220 KV Substation Rewari.jpeg" alt="Rest House Rewari" class="w-full h-full object-cover"></div>
+        <div class="p-5">
+          <h3 class="font-bold text-navy leading-snug">Renovation of Rest House at 220 KV Substation Rewari</h3>
+          <p class="text-sm text-gold font-semibold mt-1">HVPNL, Rewari</p>
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-xs font-semibold text-gray-500">Allotment: 18/05/2026</span>
+            <span class="text-xs font-bold bg-green-100 text-green-700 px-2.5 py-1 rounded-full">Closed</span>
+          </div>
+        </div>
+      </div>
+      <!-- Project 23 -->
+      <div class="project-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-44 overflow-hidden"><img src="./Construction of Multi-Purpose Hall for Sports Activities at GMSS School, Village Wazirabad (MPLAD Works).webp" alt="Sports Hall Wazirabad" class="w-full h-full object-cover"></div>
+        <div class="p-5">
+          <h3 class="font-bold text-navy leading-snug">Construction of Multi-Purpose Hall for Sports Activities at GMSS School, Village Wazirabad (MPLAD Works)</h3>
+          <p class="text-sm text-gold font-semibold mt-1">Municipal Corporation Gurugram</p>
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-xs font-semibold text-gray-500">Allotment: 18/12/2024</span>
+            <span class="text-xs font-bold bg-green-100 text-green-700 px-2.5 py-1 rounded-full">Closed</span>
+          </div>
+        </div>
+      </div>
+      <!-- Project 24 -->
+      <div class="project-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-44 overflow-hidden"><img src="./Repair and Renovation of existing boundary wall at 66 KV Substation Sector-31 Faridabad.jpeg" alt="Boundary Wall Repair Sector-31" class="w-full h-full object-cover"></div>
+        <div class="p-5">
+          <h3 class="font-bold text-navy leading-snug">Repair and Renovation of existing boundary wall at 66 KV Substation Sector-31 Faridabad</h3>
+          <p class="text-sm text-gold font-semibold mt-1">HVPNL, Faridabad</p>
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-xs font-semibold text-gray-500">Allotment: 22/05/2026</span>
+            <span class="text-xs font-bold bg-green-100 text-green-700 px-2.5 py-1 rounded-full">Closed</span>
+          </div>
+        </div>
+      </div>
+      <!-- Project 25 -->
+      <div class="project-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-44 overflow-hidden"><img src="./Construction and Renovation of Boundary wall at 66 KV Substation, Idgah, Faridabad.jpeg" alt="Boundary Wall Idgah Faridabad" class="w-full h-full object-cover"></div>
+        <div class="p-5">
+          <h3 class="font-bold text-navy leading-snug">Construction and Renovation of Boundary wall at 66 KV Substation, Idgah, Faridabad</h3>
+          <p class="text-sm text-gold font-semibold mt-1">HVPNL, Faridabad</p>
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-xs font-semibold text-gray-500">Allotment: 22/05/2026</span>
+            <span class="text-xs font-bold bg-green-100 text-green-700 px-2.5 py-1 rounded-full">Closed</span>
+          </div>
+        </div>
+      </div>
+      <!-- Project 26 -->
+      <div class="project-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="p-6">
+          <h3 class="font-bold text-navy leading-snug">Repair and maintenance of Rest House at 66 KV Substation Mehrauli Road Gurugram</h3>
+          <p class="text-sm text-gold font-semibold mt-1">HVPNL, Gurugram</p>
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-xs font-semibold text-gray-500">Bid Date: 17/08/2026</span>
+            <span class="text-xs font-bold bg-blue-100 text-blue-700 px-2.5 py-1 rounded-full">Bid Submitted</span>
+          </div>
+        </div>
+      </div>
+      <!-- Project 27 -->
+      <div class="project-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-44 overflow-hidden"><img src="./Repair and Renovation of Samshan Ghat Choma village, Palam Vihar Ward no.3.avif" alt="Samshan Ghat Repair" class="w-full h-full object-cover"></div>
+        <div class="p-5">
+          <h3 class="font-bold text-navy leading-snug">Repair and Renovation of Samshan Ghat Choma village, Palam Vihar Ward no.3</h3>
+          <p class="text-sm text-gold font-semibold mt-1">Municipal Corporation Gurugram</p>
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-xs font-semibold text-gray-500">Allotment: 29/06/2020</span>
+            <span class="text-xs font-bold bg-green-100 text-green-700 px-2.5 py-1 rounded-full">Closed</span>
+          </div>
+        </div>
+      </div>
+      <!-- Project 28 -->
+      <div class="project-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-44 overflow-hidden"><img src="./Development of two parks near Mandir in Sikenderpur ward no-34 Gurugram.jpeg" alt="Parks Sikenderpur" class="w-full h-full object-cover"></div>
+        <div class="p-5">
+          <h3 class="font-bold text-navy leading-snug">Development of two parks near Mandir in Sikenderpur ward no-34 Gurugram</h3>
+          <p class="text-sm text-gold font-semibold mt-1">Municipal Corporation Gurugram</p>
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-xs font-semibold text-gray-500">Allotment: 15/06/2021</span>
+            <span class="text-xs font-bold bg-green-100 text-green-700 px-2.5 py-1 rounded-full">Closed</span>
+          </div>
+        </div>
+      </div>
+      <!-- Project 29 -->
+      <div class="project-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-44 overflow-hidden"><img src="./Construction of Government Veterinary Hospital at Village Nanu Khurd.jpeg" alt="Veterinary Hospital Nanu Khurd" class="w-full h-full object-cover"></div>
+        <div class="p-5">
+          <h3 class="font-bold text-navy leading-snug">Construction of Government Veterinary Hospital at Village Nanu Khurd</h3>
+          <p class="text-sm text-gold font-semibold mt-1">Panchayati Raj, Gurugram</p>
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-xs font-semibold text-gray-500">Allotment: FY 2023-24</span>
+            <span class="text-xs font-bold bg-green-100 text-green-700 px-2.5 py-1 rounded-full">Closed</span>
+          </div>
+        </div>
+      </div>
+      <!-- Project 30 -->
+      <div class="project-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-44 overflow-hidden"><img src="./Construction of Government Veterinary Dispensary at Village Budhera.jpeg" alt="Veterinary Dispensary Budhera" class="w-full h-full object-cover"></div>
+        <div class="p-5">
+          <h3 class="font-bold text-navy leading-snug">Construction of Government Veterinary Dispensary at Village Budhera</h3>
+          <p class="text-sm text-gold font-semibold mt-1">Panchayati Raj, Gurugram</p>
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-xs font-semibold text-gray-500">Allotment: FY 2023-24</span>
+            <span class="text-xs font-bold bg-green-100 text-green-700 px-2.5 py-1 rounded-full">Closed</span>
+          </div>
+        </div>
+      </div>
+      <!-- Project 31 -->
+      <div class="project-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-44 overflow-hidden"><img src="./Construction of Government Veterinary Dispensary at Village Mangwaki.jpeg" alt="Veterinary Dispensary Mangwaki" class="w-full h-full object-cover"></div>
+        <div class="p-5">
+          <h3 class="font-bold text-navy leading-snug">Construction of Government Veterinary Dispensary at Village Mangwaki</h3>
+          <p class="text-sm text-gold font-semibold mt-1">Panchayati Raj, Gurugram</p>
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-xs font-semibold text-gray-500">Allotment: FY 2023-24</span>
+            <span class="text-xs font-bold bg-green-100 text-green-700 px-2.5 py-1 rounded-full">Closed</span>
+          </div>
+        </div>
+      </div>
+      <!-- Project 32 -->
+      <div class="project-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-44 overflow-hidden"><img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80" alt="Ayush Dispensary Jamalpur" class="w-full h-full object-cover"></div>
+        <div class="p-5">
+          <h3 class="font-bold text-navy leading-snug">Construction of Ayush Dispensary at Village Jamalpur</h3>
+          <p class="text-sm text-gold font-semibold mt-1">Panchayati Raj, Gurugram</p>
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-xs font-semibold text-gray-500">Allotment: FY 2023-24</span>
+            <span class="text-xs font-bold bg-green-100 text-green-700 px-2.5 py-1 rounded-full">Closed</span>
+          </div>
+        </div>
+      </div>
+      <!-- Project 33 -->
+      <div class="project-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-44 overflow-hidden"><img src="./A-4 Faridabad.jpeg" alt="Switch House A-4 Faridabad" class="w-full h-full object-cover"></div>
+        <div class="p-5">
+          <h3 class="font-bold text-navy leading-snug">Construction of extension of switch house building and additional 12.5/16 MVA Transformer Plinth, ODSG foundation, ODCT, extension of road and providing Un-Climbable fencing at 220 KV Substation A-4 Faridabad</h3>
+          <p class="text-sm text-gold font-semibold mt-1">HVPNL, Faridabad</p>
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-xs font-semibold text-gray-500">Allotment: 05/05/2022</span>
+            <span class="text-xs font-bold bg-green-100 text-green-700 px-2.5 py-1 rounded-full">Closed</span>
+          </div>
+        </div>
+      </div>
+      <!-- Project 34 -->
+      <div class="project-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-44 overflow-hidden"><img src="./Construction of extension of switch house building at 66 KV Substation Dabriwala, Faridabad (2).jpeg" alt="Switch House Dabriwala" class="w-full h-full object-cover"></div>
+        <div class="p-5">
+          <h3 class="font-bold text-navy leading-snug">Construction of extension of switch house building at 66 KV Substation Dabriwala, Faridabad</h3>
+          <p class="text-sm text-gold font-semibold mt-1">HVPNL, Faridabad</p>
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-xs font-semibold text-gray-500">Allotment: 05/07/2022</span>
+            <span class="text-xs font-bold bg-green-100 text-green-700 px-2.5 py-1 rounded-full">Closed</span>
+          </div>
+        </div>
+      </div>
+      <!-- Project 35 -->
+      <div class="project-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="h-44 overflow-hidden"><img src="./Construction of Extension switch house building at 66 KV Substation Northern India Faridabad.jpeg" alt="Switch House Northern India" class="w-full h-full object-cover"></div>
+        <div class="p-5">
+          <h3 class="font-bold text-navy leading-snug">Construction of Extension switch house building at 66 KV Substation Northern India Faridabad</h3>
+          <p class="text-sm text-gold font-semibold mt-1">HVPNL, Faridabad</p>
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-xs font-semibold text-gray-500">Allotment: 02/11/2022</span>
+            <span class="text-xs font-bold bg-green-100 text-green-700 px-2.5 py-1 rounded-full">Closed</span>
+          </div>
+        </div>
+      </div>
+      <!-- Project 36 -->
+      <div class="project-card bg-white rounded-sm overflow-hidden shadow-md fade-in">
+        <div class="p-6">
+          <h3 class="font-bold text-navy leading-snug">DNIT for Extension of Control Room Building</h3>
+          <p class="text-sm text-gold font-semibold mt-1">HVPNL, Gurugram</p>
+          <div class="flex items-center justify-between mt-3">
+            <span class="text-xs font-semibold text-gray-500">Bid Date: 12/10/2026</span>
+            <span class="text-xs font-bold bg-blue-100 text-blue-700 px-2.5 py-1 rounded-full">Bid Submitted</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT / CTA ===== -->
+<section id="contact" class="py-20 bg-navy relative overflow-hidden">
+  <div class="absolute inset-0 opacity-10" style="background-image:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1920&q=80');background-size:cover;background-position:center;"></div>
+  <div class="relative max-w-7xl mx-auto px-4">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="text-white fade-in">
+        <p class="text-gold font-bold tracking-widest uppercase text-sm mb-2">Get In Touch</p>
+        <h2 class="text-3xl sm:text-4xl font-extrabold mb-6">Contact Us</h2>
+        <p class="text-gray-300 mb-8 leading-relaxed">Have a government tender or private project? Reach out to us for a consultation and quotation.</p>
+        <ul class="space-y-4">
+          <li class="flex items-start gap-3">
+            <span class="w-10 h-10 bg-gold/20 rounded-sm flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </span>
+            <div><div class="font-bold">Corporate Office</div><a href="https://www.google.com/maps/search/?api=1&query=SCO-204,+Satyam+Plaza,+Civil+Lines,+Sector-15,+Gurugram-122001" target="_blank" rel="noopener noreferrer" class="text-gray-300 text-sm hover:text-gold transition cursor-pointer">SCO-204, Satyam Plaza, Civil Lines, Sector-15, Gurugram-122001</a></div>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="w-10 h-10 bg-gold/20 rounded-sm flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            </span>
+            <div><div class="font-bold">Phone</div><div class="text-gray-300 text-sm">+91 9540365609 &nbsp;|&nbsp; 0124-4192432</div></div>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="w-10 h-10 bg-gold/20 rounded-sm flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </span>
+            <div><div class="font-bold">Email</div><div class="text-gray-300 text-sm">jmdmahamewagrouppvtltd@gmail.com</div></div>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="w-10 h-10 bg-gold/20 rounded-sm flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+            </span>
+            <div><div class="font-bold">GSTIN</div><div class="text-gray-300 text-sm">06AAHCJ2677E1ZJ</div></div>
+          </li>
+        </ul>
+      </div>
+      <div class="bg-white rounded-sm p-8 shadow-2xl fade-in">
+        <h3 class="text-2xl font-extrabold text-navy mb-6">Request a Quote</h3>
+        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
+          <input type="hidden" name="access_key" value="0a7b07b4-f227-49e4-a8e4-e445e223fc97">
+          <input type="hidden" name="subject" value="New Quote Request from JMD Maha Mewa Website">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <input type="text" name="name" placeholder="Your Name *" required class="w-full border border-gray-300 rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold">
+            <input type="tel" name="phone" placeholder="Phone Number *" required class="w-full border border-gray-300 rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold">
+          </div>
+          <input type="email" name="email" placeholder="Email Address" required class="w-full border border-gray-300 rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold">
+          <select name="service" class="w-full border border-gray-300 rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold bg-white">
+            <option value="" disabled selected>Select a Service</option>
+            <option>Project Planning, Design & Execution</option>
+            <option>Government Infrastructure & Development Projects</option>
+            <option>Turnkey Project Execution & Management</option>
+            <option>Civil Construction & Infrastructure Development</option>
+            <option>Building Construction & Renovation</option>
+            <option>Road Construction & Highway Development</option>
+            <option>Bridge Construction & Infrastructure Works</option>
+            <option>Structural Engineering & Fabrication Works</option>
+            <option>Industrial Civil & Mechanical Works</option>
+            <option>Mechanical Engineering & Industrial Projects</option>
+            <option>Electrical & Mechanical Installation Works</option>
+            <option>Water Supply & Pipeline Works</option>
+            <option>Plumbing & Sanitary Works</option>
+            <option>Drainage & Sewerage Systems</option>
+            <option>Boundary Wall & Compound Development Works</option>
+            <option>Other / General Enquiry</option>
+          </select>
+          <textarea name="message" rows="4" placeholder="Tell us about your project requirements..." class="w-full border border-gray-300 rounded-sm px-4 py-3 text-sm focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold"></textarea>
+          <button type="submit" class="w-full bg-gold hover:bg-gold-500 text-navy font-extrabold py-4 rounded-sm transition tracking-wide">SEND ENQUIRY</button>
+          <p id="formMsg" class="hidden text-center text-sm font-semibold text-green-600">Thank you! Your enquiry has been noted. We will contact you shortly.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="bg-navy-800 text-gray-400">
+  <div class="max-w-7xl mx-auto px-4 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div>
+      <div class="flex items-center gap-3 mb-5">
+        <img src="logo.jpeg" alt="JMD Maha Mewa Group Logo" class="h-14 w-auto object-contain bg-white rounded-sm p-1">
+        <div class="leading-tight">
+          <div class="text-white font-extrabold text-sm">JMD MAHA MEWA</div>
+          <div class="text-gold font-bold text-xs tracking-widest">GROUP'S PVT. LTD.</div>
+        </div>
+      </div>
+      <p class="text-sm leading-relaxed mb-4">Govt. Contractor & Construction Company delivering quality contracting services from Gurugram, Haryana.</p>
+      <p class="text-gold text-xs font-bold tracking-wider">GOVT. CONTRACTOR</p>
+      <p class="text-gray-300 text-xs italic">"Building Tomorrow, Together"</p>
+    </div>
+    <div>
+      <h4 class="text-white font-bold mb-4 tracking-wide">Quick Links</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#home" class="hover:text-gold transition">Home</a></li>
+        <li><a href="#about" class="hover:text-gold transition">About Us</a></li>
+        <li><a href="#services" class="hover:text-gold transition">Our Services</a></li>
+        <li><a href="#projects" class="hover:text-gold transition">Our Projects</a></li>
+        <li><a href="#contact" class="hover:text-gold transition">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-white font-bold mb-4 tracking-wide">Our Services</h4>
+      <ul class="space-y-2 text-sm">
+        <li>Site Development & Infrastructure</li>
+        <li>Foundation & Structural Work</li>
+        <li>Masonry & Wall Work</li>
+        <li>Flooring & Finishing</li>
+        <li>Electrical Installation</li>
+        <li>Plumbing & Sanitary</li>
+        <li>Mechanical & HVAC</li>
+        <li>Testing & Handover</li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-white font-bold mb-4 tracking-wide">Contact Details</h4>
+      <ul class="space-y-3 text-sm">
+        <li class="flex gap-2"><span class="text-gold">📍</span> <a href="https://www.google.com/maps/search/?api=1&query=SCO-204,+Satyam+Plaza,+Civil+Lines,+Sector-15,+Gurugram-122001" target="_blank" rel="noopener noreferrer" class="hover:text-gold transition cursor-pointer">SCO-204, Satyam Plaza, Civil Lines, Sector-15, Gurugram-122001</a></li>
+        <li class="flex gap-2"><span class="text-gold">📞</span> +91 9540365609 | 0124-4192432</li>
+        <li class="flex gap-2"><span class="text-gold">✉️</span> jmdmahamewagrouppvtltd@gmail.com</li>
+        <li class="flex gap-2"><span class="text-gold">🧾</span> GSTIN: 06AAHCJ2677E1ZJ</li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 py-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs">
+      <p>© 2026 JMD Maha Mewa Group's Pvt. Ltd. All Rights Reserved.</p>
+      <p>Building Tomorrow, Together</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mobile menu toggle
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+
+  // Scroll-spy for nav active state
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-link');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) current = s.getAttribute('id'); });
+    navLinks.forEach(l => {
+      l.classList.toggle('active', l.getAttribute('href') === '#' + current);
+    });
+  });
+
+  // Fade-in on scroll
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  // Contact form — submits to Web3Forms via fetch so user stays on page
+  document.getElementById('contactForm').addEventListener('submit', async e => {
+    e.preventDefault();
+    const form = e.target;
+    const btn = form.querySelector('button[type="submit"]');
+    btn.disabled = true;
+    btn.textContent = 'SENDING...';
+    try {
+      const res = await fetch(form.action, { method: 'POST', body: new FormData(form) });
+      const data = await res.json();
+      if (data.success) {
+        document.getElementById('formMsg').classList.remove('hidden');
+        form.reset();
+        setTimeout(() => document.getElementById('formMsg').classList.add('hidden'), 5000);
+      } else {
+        alert('Something went wrong. Please try again or call us directly.');
+      }
+    } catch (err) {
+      alert('Network error. Please try again or call us directly.');
+    } finally {
+      btn.disabled = false;
+      btn.textContent = 'SEND ENQUIRY';
+    }
+  });
+</script>
+</body>
+</html>
